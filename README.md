@@ -2,4 +2,4 @@
 
 ## Hi There!!!
 
-### This repository is a personal
+### This repository is a personal repository for keeping track of my Web Development journey.
