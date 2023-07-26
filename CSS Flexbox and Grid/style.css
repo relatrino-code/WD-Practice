@@ -1,0 +1,96 @@
+/* BASE STYLES */
+.container {
+  border: 5px solid black;
+  width: 500px;
+  height: 500px;
+  background-color: blueviolet;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 5px solid darkred;
+  border-radius: 7px;
+  text-align: center;
+  padding: 1em;
+  color: white;
+}
+
+/* FLEXBOX */
+.container {
+  display: flex;
+  /* flex-direction: row;
+    justify-content: space-evenly;  */
+  /* Align on main axis */
+
+  /* align-items: flex-start;  */
+  /* Align on cross axis */
+
+  /* flex-wrap: wrap; */
+  /* When flex-wrap is set to wrap, we have 2 more properties unlocked */
+
+  /* align-content: flex-end;  */
+  /* Align on cross axis when flex wrap is enabled */
+  /* justify-items: ;  */
+  /* Align on main axis when flex wrap is enabled */
+
+  /* gap: 1em; */
+}
+
+.item-3 {
+  /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px; */
+  /* flex: 1 1 300px; */
+
+  /* To override, align-items on the container, you can set align-self here. */
+  align-self: center;
+}
+
+/* BASE STYLES */
+.containerx {
+  border: 5px solid black;
+  width: 50%;
+  height: 50%;
+  background-color: white;
+}
+
+.itemx {
+  /* width: 450px;
+    height: 1px; */
+  background-color: red;
+  padding: 1em;
+  color: white;
+  border: 7px solid darkred;
+  /* margin: 8px auto;     */
+}
+
+/* GRID */
+.containerx {
+  display: grid;
+  grid-template-rows: repeat(6, 100px);
+  grid-template-columns: repeat(6, 100px);
+  /* If here we use auto instead of 6, the grid will be reponsive */
+  grid-gap: 1em;
+
+  /* If already present divs fill the grid size specified explicitly, a new div added will be stored in an automade grid row, this behaviour is called implicit grid.
+    To set the size of implicit rows use grid-auto-rows */
+  grid-auto-rows: 100px;
+  /* By default an implicit row is created. To create an implicit column we use grid-auto-flow: column; */
+}
+
+.item-1x {
+  grid-row: 1 / span 2;
+  grid-column: 1 / 7;
+}
+
+.item-2x {
+  grid-area: 2 / 4 / 4 / 6;
+  z-index: 1;
+}
+
+.item-3x {
+  /* grid-area: row-start column-start row-end column-end; */
+  grid-area: 3 / 1 / 7 / 7;
+}

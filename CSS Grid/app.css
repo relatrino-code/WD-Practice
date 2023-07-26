@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#container {
+    border: 4px solid black;
+    margin: 10px auto;
+    width: 90%;
+    height: 1000px;
+    display: grid;
+    /* Container behaves as a block element */
+    /* display: inline-grid; = container behaves as a inline element*/
+    /* grid-template-columns: calc(1000px/3) calc(1000px/3) calc(1000px/3); */
+    /* grid-template-rows: calc(1000px/3) calc(1000px/3) calc(1000px/3); */
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.box {
+    font-size: 1.5rem;
+}

@@ -1,0 +1,50 @@
+.container {
+    background-color: #565656;
+    width: 300px;
+    height: 425px;
+    padding: 12px 20px;
+}
+.main { 
+    color: white;
+}
+ .b1 {
+    margin: 5px;
+    width: 95%;
+    height: 15%;
+    border-radius: 10px;
+    background-image: none;
+    background-color: teal;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    border: none;
+ }
+
+ .strength {
+    margin: 5px;
+    width: 95%;
+    height: 15%;
+    border-radius: 10px;
+    background-image: none;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    border: none;
+    margin: 10px 5px;
+ }
+
+ .pass {
+    margin: 0;
+    font-size: 22px;
+    color: white;
+ }
+ .check {
+     margin: 6px;
+ }
+ .slide {
+     color: teal;
+     m
+ }

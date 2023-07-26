@@ -1,0 +1,44 @@
+h1 {
+    background-color: #ff9e00;
+    width: 90px;
+    margin: 0 0 15px 430px;
+}
+
+div {
+    width: 900px;
+    height: 100px;
+}
+
+#one {
+    background-color: #fdc5f5;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    /* box-sizing: border-box; */
+    border-radius: 6px;
+    padding: 20px 15px 0 15px;
+}
+
+#two {
+    background-color: #f7aef8;
+    border: 2px dotted #76520e;
+    border-radius: 10px;
+    padding: 20px 15px 0 15px;
+    margin: 15px 0 0 0;
+}
+
+#three {
+    background-color: #b388eb;
+    border: 2px solid #ff206e;
+    border-radius: 8px;
+    padding: 20px 15px 0 15px;
+    margin: 15px 0 10px 0;
+}
+
+button {
+    padding: 5px 20px;
+    background-color: #fcbf49;
+    border-radius: 10px;
+    color: #d62828;
+    margin: 10px 0 0 430px;
+}

@@ -1,0 +1,30 @@
+body {
+    font-size: 16px;
+}
+
+h1 {
+    width: 300px;
+    background-color: #9b5de5;
+    border: 5px solid black;
+    color: #eae2b7;
+    text-align: center;
+    margin: 17px auto;
+    font-family: Courier New;
+    font-weight: lighter;
+    font-size: 1.8em;
+    padding: 0.6em 0.6em;
+}
+
+h1:nth-of-type(2n) {
+    background-color: #f15bb5;
+}
+
+h1:nth-of-type(3n) {
+    background-color: #ff7d00;
+}
+
+h1:nth-of-type(4n) {
+    background-color: #00bbf9;
+}
+
+/* Transform uses functions like translateX(), translateY(), skew(), scale, rotate, etc. */

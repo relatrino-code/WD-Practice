@@ -1,0 +1,123 @@
+body {
+
+}
+
+.main {
+    box-sizing: border-box;
+    margin: 10px auto;
+    background-color: whitesmoke;
+    width: 560px;
+    height: 900px;
+    padding: 20px 10px;
+    
+    
+}
+
+.case {
+    box-sizing: border-box;
+    background-color: #434050;
+    width: 70%;height: 85%;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 50px;
+    display: grid; 
+    grid-template-rows: 241px 241px 241px;
+    grid-template-columns: 230px 142px;
+    grid-template-areas: 
+    "camera empty"
+    "logo logo";
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.camera {
+    grid-area: camera;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "cam1 flash"
+    "cam1 cam2"
+    "cam3 cam2"
+    "cam3 black";
+    background-color: #252146;
+    border-radius: 50px;
+    border: 6px solid #434050;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 0 0 10px 2px rgba(228, 221, 221, 0.1);
+    margin: 8px;
+    
+}
+
+.logo {
+    grid-area: logo;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.pic {
+    
+    /* margin: 0 auto; */
+     background-color: transparent;
+     width: 100px;
+     height: 100px;
+}
+
+.cam {
+    background-color: black;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 5px solid #434050;
+    box-shadow: 0 0 10px 2px rgba(99, 96, 100, 0.3);
+}
+
+#flash {
+    grid-area: flash;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border: none;
+    position: relative;
+    top: 15px;
+    right: 10px;
+    
+}
+
+#idk {
+    grid-area: black;
+     background-color: black;
+     width: 30px;
+     height:30px;
+     border: none;
+     position: relative;
+     bottom: 15px;
+     right: 10px;
+}
+#cam1 {
+    grid-area: cam1;
+    position: relative;
+}
+#cam2 {
+    grid-area: cam2;
+    position: relative;
+    right: 10px;
+}
+#cam3 {
+    grid-area: cam3;
+    position: relative;
+    bottom: 8px;
+}
+
+.inner {
+     width: 18px;
+     height: 18px;
+     background-color: #152238;
+     border-radius: 50%;
+     margin: 0 auto;
+     position: relative;
+     top: 26px;
+}
+
+

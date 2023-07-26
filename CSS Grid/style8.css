@@ -1,0 +1,118 @@
+body {
+  text-align: center;
+}
+
+/* CONTAINER  */
+#container {
+  border: 5px solid #4834d4;
+  background-color: whitesmoke;
+  margin: 0 auto;
+  width: 95vw;
+  height: 60vh;
+}
+
+.item {
+  background-color: #f39c12;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.item:hover {
+  color: white;
+  cursor: pointer;
+  line-height: 20rem;
+}
+
+#container {
+  display: grid;
+  /* grid-template-columns: 1fr minmax(300px, 1fr); */
+  /* grid-template-columns: repeat(auto-fill, 300px); */
+  /* autofill - creates columns even if there are no more items to fill them in */
+  /* autofit - only creates additional columns if there are additional items to fill them in */
+  /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(); */
+  /* naming rows and columns */
+  /* grid-template-columns: [col-start] 1fr [col-2] 1fr [col-3] [col-end]; */
+  /* define column size of implicit columns  */
+  /* grid-auto-columns: 50px; */
+  /* grid-auto-flow: row; */
+  /* grid-row-gap: ;
+    grid-column-gap: ;
+    grid-gap: ; */
+  /* align-items: ; Positions items vertically within the grid cell */
+  /* justify-items: ; Positions items horizontally within the grid cell */
+  /* place-items: align-items justify-items; */
+
+  /* To place our content within the whole container, we use: */
+  /* align-content: ; Decides how we place our content vertically within the container */
+  /* justify-content: ; Decides how we place our content vertically within the container */
+  /* place-content: align-content justify-content; */
+
+  grid-template-columns: [col-start] 1fr [col-2] 1fr [col-3] 1fr [col-end];
+  grid-auto-rows: 60px auto 100px;
+  grid-template-areas: 
+  "header header header"
+  "main main sidebar"
+  "footer footer footer";
+
+  /* grid-template: 
+  "header header header" 60px
+  "main main sidebar" auto
+  "footer footer footer" 100px
+  /[col-start] 1fr [col-2] 1fr [col-3] 1fr [col-end]; */
+
+  /* grid: explicit row / expicit column;
+  grid: implicit row / expicit column; */
+  /* grid-coulmn-start: 1;
+  grid column-end: 2; */
+}
+
+.one {
+    grid-area: header;
+    /* grid-column-start: ;
+    grid-column-end: ; */
+}
+
+.two {
+    grid-area: main;
+}
+
+.three {
+    grid-area: sidebar;
+}
+
+.four {
+    grid-area: footer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

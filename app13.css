@@ -1,0 +1,56 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: baseline; sets content such that there is a baseline through the text*/
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    /*flex-diection = set direction of main axis*/
+    /*flex-wrap = set direction of cross axis*/
+    /*justify-content = placement of items along main axis*/
+    /*align-items = placement of items along cross axis*/
+    /* align-content: flex-start; */
+    /* flex-wrap: wrap; */
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    font-size: 4em;
+    text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+main {
+    width: 80%;
+    border: 5px solid black;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+}
+
+main .sidebar {
+    background-color: blueviolet;
+    flex: 1 2 300px;
+}
+
+main .maincontent {
+    background-color: aquamarine;
+    flex: 2 1 800px;
+}

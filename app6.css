@@ -1,0 +1,85 @@
+section.first {
+    width: 500px;
+    height: 500px;
+    background-color: magenta;
+}
+
+.first div {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    border: none;
+}
+
+section.second {
+    width: 300px;
+    height: 300px;
+    background-color: blueviolet;
+}
+
+.second div {
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    opacity: 0.5;
+    margin: 0;
+    border: none;
+}
+
+/* Opacity affects the entire element, its text and all while alpha channel just affects the background color and nothing else */
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+#middle {
+    background-color: aquamarine;
+}
+
+#static #middle {
+    position: static;
+    top: 100px;
+    /*Nothing happens */
+}
+
+#relative #middle {
+    position: relative;
+    top: 50px;
+    left: -75px;
+}
+
+/*Relative to itself*/
+
+#absolute {
+    position: relative;
+    ;
+}
+
+#absolute #middle {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+/*relative to its ancestor, i.e. #absolute else relative to the body if ancestor is static*/
+
+#fixed #middle {
+    position: fixed;
+    top: 0;
+    left: 200px;
+}
+
+/*stays still rest page moves below it*/
+
+/*sticky position property : not fixed at the start of scrolling but acts like fixed as soon as it hits the top*/
+/* #sticky #middle {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+} */

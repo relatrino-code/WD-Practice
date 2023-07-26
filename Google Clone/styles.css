@@ -1,0 +1,36 @@
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Logo Styles */
+img {
+  width: 200px; /* Adjust size as needed */
+  margin-top: 100px; /* Adjust vertical position as needed */
+}
+
+/* Search Bar Styles */
+input[type="text"] {
+  padding: 10px;
+  width: 400px; /* Adjust width as needed */
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Buttons Styles (optional) */
+a {
+  margin: 10px;
+  padding: 5px 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: #333;
+}

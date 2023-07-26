@@ -1,0 +1,28 @@
+h1 {
+        text-align: center;
+        width: 70%;
+        font-weight: 300;
+        text-decoration: orange underline dotted;
+        letter-spacing: 10px;
+        font-size: 80px;
+        font-family: fantasy, Segoe UI, Futura, Arial;
+}
+
+body {
+        background-color: black;
+        color: white;
+}
+
+p  {
+        font-weight: bold;
+        line-height: 1.5;
+}
+
+h2  {
+        text-decoration: blue underline;
+}
+
+a  {
+        text-decoration: none;
+        color: yellow;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1 style="color: deeppink;">Forms Demo</h1>
+
+    <form action="https://www.google.com/search/" method="get">
+        <!-- The name attribte is used to label our data when it is sent to the target destination when we submit the form -->
+        <p>
+            <label for="username">Enter a Username: </label>
+            <input type="text" placeholder="Username" id="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a Password: </label>
+            <input type="password" placeholder="Password" id="password" name="pass">
+        </p>
+        <!-- Regular button, won't submit because of the type attribute -->
+        <button type="button">Submit(button type)</button>
+        <!-- This button submits the form -->
+        <button>Submit default button(no type)</button>
+        <!-- So does this one -->
+        <button type="submit">Submit(submit type)</button>
+        <p>
+            <!-- Alternative way to submit an input (less common tho)-->
+            <label for="color">
+                Enter a Color:
+                <input type="color" name="color">
+            </label>
+
+        </p>
+        <p>
+            <label for="number">Enter a Number: </label>
+            <input type="number" placeholder="Number" id="number" name="num" value="35" min="0" max="1000000">
+        </p>
+        <button>Submit!!!</button>
+        <!-- THis button willl submit the form -->
+        <input type="submit" value="Click Me!">
+        <!-- We can aslo create buttons using the input element with the text inside the value attribte (less common tho)-->
+    </form>
+    <hr>
+    <button>Not Inside Form</button>
+    <!-- Outside the form, no default behaviour -->
+
+    <h2>Personalized Searches</h2>
+
+    <h3>Google Search</h3>
+    <img src="Pictures/2991148.png" alt="Google icon" width="40px">
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button type="submit">Seach Google</button>
+    </form>
+
+    <h3>Reddit Search span</h3>
+    <img src="Pictures/6002f95551c2ec00048c6c70.png" alt="Reddit icon" width="40px">
+    <form action="https://reddit.com/search">
+        <input type="text" name="q">
+        <button type="submit">Search Reddit</button>
+    </form>
+
+    <h3>Youtube Search</h3>
+    <img src="Pictures/1384060.png" alt="Youtube icon" width="40px">
+    <form action="https://www.youtube.com/search">
+        <input type="text" name="search_query">
+        <button type="submit">Seach Youtube</button>
+    </form>
+    <hr>
+
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to the Terms of Service</label>
+
+        <h2>Pizza Size!</h2>
+        <p>
+            <input type="radio" name="size" id="s" value="S">
+            <label for="s">Small</label>
+            <br>
+            <input type="radio" name="size" id="m" value="M">
+            <label for="m">Medium</label>
+            <br>
+            <input type="radio" name="size" id="l" value="L">
+            <label for="l">Large</label>
+        </p>
+        <!-- If we do not specify the value attribte, then the default value of on will be send with the name attribute tag -->
+        <p>
+            <label for="meal">Please select a meal</label>
+            <select name="meal" id="meal">
+                <option value="" selected>--Please choose an option--</option>
+                <option value="meat">Meat</option>
+                <option value="ham">Ham</option>
+                <option value="steak">Steak</option>
+                <option value="lamb">Lamb</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of Cheese: </label>
+            <input type="range" id="cheese" name="cheese_level" min="0" max="100" step="10" value="80">
+            <!-- The value attribute is used to specify an initial value to the slider when the form is loaded -->
+            <!-- The number type input element also has a min, max and step values in addition to the value attribute -->
+        </p>
+
+        <p>
+            <label for="essay">Any Special Requests?</label>
+            <br>
+            <textarea name="requests" id="essay" cols="30" rows="5" placeholder="Type something here......."></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter first name: </label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="username">Username: </label>
+            <input type="text" name="username" id="username" minlength="4" maxlength="20" required>
+        </p>
+        <p>
+            <label for="email">Email: </label>
+            <input type="email" required name="email" id="email">
+        </p>
+        <p>
+            <label for="url">URL: </label>
+            <input type="url" required name="url" id="url">
+        </p>
+        <p>
+            <label for="tele">Telephone No.: </label>
+            <input type="tel" required name="telephone" id="tele">
+        </p>
+        <button>Sumbit</button>
+    </form>
+
+</body>
+
+</html>
